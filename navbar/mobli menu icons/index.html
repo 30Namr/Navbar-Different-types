@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moblie Menu</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="link active">
+                <img src="home.png" alt="">
+                <p>Home</p>
+            </div>
+
+            <div class="link">
+                <img src="like.png" alt="">
+                <p>Likes</p>
+            </div>
+
+            <div class="link">
+                <img src="contact.webp" alt="">
+                <p>Profiles</p>
+            </div>
+
+            <div class="link">
+                <img src="search.png" alt="">
+                <p>Search</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+
+        let links = document.getElementsByClassName("link");
+
+        function removeactive() {
+            for (link of links) {
+                link.classList.remove("active");
+            }
+
+        }
+
+
+        for (link of links) {
+            link.onclick = function () {
+                removeactive();
+                this.classList.add("active");
+            }
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
